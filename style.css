@@ -1,0 +1,59 @@
+:root {
+    --color-white: rgba(255, 255, 255, 0.85);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin: 0;
+    height: 100vh;
+    background-image: url("./images/pexels-vitaly-vlasov-1655817.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.divv {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: black;
+    opacity: 60%;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0 10vw;
+    color: white;
+    opacity: 90%;
+    font-size: 7vw;
+    letter-spacing: .2rem;
+    line-height: 20vh;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+header a {
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
+    font-size: small;
+    color: white;
+    opacity: 50%;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.change {
+    margin-left: 20px;
+}
