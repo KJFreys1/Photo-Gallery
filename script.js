@@ -1,5 +1,8 @@
 (function () {
     const $change = $(".change")
+    const $modal = $(".modal")
+    const $select = $(".select")
+
     const styles = {
         hide: {
             opacity: 0,
@@ -7,6 +10,15 @@
         }, show: {
             opacity: 1,
             marginLeft: "20px"
+        }, block: {
+            height: "100%",
+            width: "100%"
+        }, long: {
+            height: "100%",
+            width: "35%"
+        }, wide: {
+            height: "80%",
+            width: "100%"
         }
     }
     const spans = ["Beautful", "Art", "Life", "Complex", "Amazing"]
@@ -34,5 +46,22 @@
                 scrollTop: $(this.hash).offset().top
             }, 800)
         }
+    })
+
+    // Modal behavior
+    function animateModal(expand) {
+        $select.animate(styles[expand], 700)
+    }
+
+    $(".item img").on("click", function(e) {
+        $select.attr("src", this.src)
+        $modal.css("display", "flex")
+        animateModal(this.className)
+    })
+
+    $(".exit").on("click", function(e) {
+        $modal.hide()
+        $select.css("height", "10%")
+        $select.css("width", "10%")
     })
 }())
