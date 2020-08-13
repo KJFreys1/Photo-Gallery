@@ -14,13 +14,9 @@
         }
         $change.animate(hide, 1000, () => {
             $change.css("marginLeft", "0")
+            $change.text(spans[index])
         })
-        setTimeout(() => $change.text(spans[index]), 1000)
-        if (index < 4) { 
-            index++
-        } else {
-            index = 0
-        }
+        index = index < 4 ? index + 1 : 0
         $change.animate(show, 1000)
     }
     
