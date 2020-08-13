@@ -3,7 +3,7 @@
     const $modal = $(".modal")
     const $select = $(".select")
 
-    const styles = {
+    let styles = {
         hide: {
             opacity: 0,
             marginLeft: "60px",
@@ -21,6 +21,18 @@
             width: "100%"
         }
     }
+
+    // Check viewport
+    if ($(window).width() < 450) {
+        styles.block.height = "50%"
+        styles.long.width = "85%"
+        styles.wide.height = "35%"
+    } else if ($(window).width() < 850) {
+        styles.block.height = "80%"
+        styles.long.width = "60%"
+        styles.wide.height = "50%"
+    }
+
     const spans = ["Beautful", "Art", "Life", "Complex", "Amazing"]
     let index = 0
     

@@ -287,7 +287,9 @@ header a {
     }
 
     .i6 {
-        margin: 0 15vw;
+        flex-grow: 0;
+        height: 35vh;
+        margin: 0 2vw;
     }
 
     .i7 {
@@ -296,5 +298,11 @@ header a {
 
     .i8 {
         margin: 3vh 0 5vh 10vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .img-wrapper {
+        height: 60%;
     }
 }
