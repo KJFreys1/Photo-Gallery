@@ -137,7 +137,6 @@ header a {
 
 .item {
     background-color: white;
-    opacity: 85%;
     margin: 1vh 0;
     position: relative;
 }
@@ -202,4 +201,65 @@ header a {
 
 .i8 {
     height: 30%;
+}
+
+@media only screen and (max-width: 850px) {
+    .gallery-container {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .col {
+        flex-direction: row;
+        width: 90vw;
+    }
+
+    .col-2 {
+        height: fit-content;
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+    }
+
+    .col-3 {
+        margin-bottom: 10vh;
+    }
+
+    .item {
+        margin: 0 1vw;
+        height: auto;
+    }
+
+    .i1 {
+        margin: 5vh 5vw 5vh 0;
+    }
+
+    .i3 {
+        margin: 1vh 5vw 5vh 5vw;
+    }
+
+    .col-2-split-1 {
+        width: 100%;
+    }
+
+    .i4 {
+        flex-grow: 2;
+        margin: 5vh 10vw 5vh 0;
+    }
+
+    .i5 {
+        flex-grow: 1;
+        margin: 0 0 9vh 0;
+    }
+
+    .i6 {
+        margin: 0 15vw;
+    }
+
+    .i7 {
+        margin-left: 5vw;
+    }
+
+    .i8 {
+        margin: 5vh 0 5vh 10vw;
+    }
 }
