@@ -1,6 +1,6 @@
 (function () {
     const $change = $(".change")
-    const spans = ["Beautful", "Art", "Life", "Wonderful", "Amazing"]
+    const spans = ["Beautful", "Art", "Life", "Complex", "Amazing"]
     let index = 0
     
     function animateSpan() {
