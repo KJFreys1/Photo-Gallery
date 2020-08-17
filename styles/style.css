@@ -14,7 +14,7 @@ body {
 header {
   margin: 0;
   height: 100vh;
-  background-image: url("./images/pexels-vitaly-vlasov-1655817.jpg");
+  background-image: url("../images/pexels-vitaly-vlasov-1655817.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
