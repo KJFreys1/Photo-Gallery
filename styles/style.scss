@@ -17,6 +17,34 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0 10vw;
+        color: white;
+        opacity: 85%;
+        font-size: 7vw;
+        letter-spacing: .2rem;
+        line-height: 20vh;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    a {
+        position: absolute;
+        bottom: 2vh;
+        right: 2vh;
+        font-size: small;
+        color: white;
+        opacity: 50%;
+        z-index: 1;
+    }
+
+    a:hover {
+        color: var(--color-highlight);
+    }
 }
 
 .divv {
@@ -30,36 +58,8 @@ header {
     opacity: 60%;
 }
 
-header h1 {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin: 0 10vw;
-    color: white;
-    opacity: 85%;
-    font-size: 7vw;
-    letter-spacing: .2rem;
-    line-height: 20vh;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
 a {
     text-decoration: none;
-}
-
-a:hover {
-    color: var(--color-highlight);
-}
-
-header a {
-    position: absolute;
-    bottom: 2vh;
-    right: 2vh;
-    font-size: small;
-    color: white;
-    opacity: 50%;
-    z-index: 1;
 }
 
 .change {
@@ -94,20 +94,20 @@ header a {
 .nav {
     display: flex;
     margin-right: 7vw;
-}
 
-.nav li {
-    list-style: none;
-    margin: auto 1vw;
-}
+    li {
+        list-style: none;
+        margin: auto 1vw;
+    }
 
-.nav a {
-    display: block;
-    color: black;
-}
+    a {
+        display: block;
+        color: black;
+    }
 
-.nav a:hover {
-    text-decoration: underline;
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .gallery-container {
@@ -139,28 +139,28 @@ header a {
     background-color: white;
     margin: 1vh 0;
     position: relative;
-}
 
-.item a {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    color: white;
-    opacity: 65%;
-}
+    a {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        color: white;
+        opacity: 65%;
+    } 
+    
+    a:hover {
+        color: var(--color-highlight);
+    }
 
-.item a:hover {
-    color: var(--color-highlight);
-}
+    img {
+        height: 100%;
+        width: 100%;
+    }
 
-.item img:hover {
-    cursor: pointer;
-    opacity: 70%;
-}
-
-.item img {
-    height: 100%;
-    width: 100%;
+    img:hover {
+        cursor: pointer;
+        opacity: 70%;
+    }
 }
 
 .i1 {
